@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#0b1329">
+  <meta name="description" content="EUROWAY Consulting Agency — Germaniya, Italiya va Bolgariyada nufuzli ta'lim, Work and Travel, Ausbildung va to'liq grantlar.">
+  <meta property="og:title" content="EUROWAY Consulting Agency | Yevropa dasturlari">
+  <meta property="og:description" content="Germaniya (Work&Travel, Ausbildung, FSJ), Italiya (DSU Grantlari) va Bolgariyada yozgi dasturlar.">
+  <meta property="og:type" content="website">
+
+  <title>EUROWAY Consulting Agency — Yevropa Imkoniyatlari</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Ambient Glows (Micro-animations) -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="logo-link" aria-label="EUROWAY Bosh sahifa">
+        <img src="assets/logo.svg" alt="EUROWAY Consulting Agency" class="site-logo">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#about" data-t="navAbout">Biz haqimizda</a>
+        <a href="#programs" data-t="navPrograms">Dasturlar</a>
+        <a href="#germany" data-filter-nav="germany">Germaniya</a>
+        <a href="#italy" data-filter-nav="italy">Italiya</a>
+        <a href="#bulgaria" data-filter-nav="bulgaria">Bolgariya</a>
+        <a href="#faq" data-t="navFaq">Savol-Javob</a>
+        <a href="#contact" data-t="navContact">Aloqa</a>
+      </nav>
+
+      <!-- Language Selector & Fast CTA -->
+      <div class="header-right">
+        <div class="lang-switch" role="group" aria-label="Tilni tanlash">
+          <button type="button" class="lang-btn active" data-lang="uz">UZ</button>
+          <button type="button" class="lang-btn" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="tel:+998881301020" class="btn btn-sm btn-outline hide-mobile" aria-label="Telefon orqali bog'lanish">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="phone-text">88 130-10-20</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Menyuni ochish" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-link" data-t="navAbout">Biz haqimizda</a>
+        <a href="#programs" class="mobile-link" data-t="navPrograms">Barcha Dasturlar</a>
+        <a href="#programs" class="mobile-link" data-filter-nav="germany">🇩🇪 Germaniya Dasturlari</a>
+        <a href="#programs" class="mobile-link" data-filter-nav="italy">🇮🇹 Italiya Universitet & Grantlari</a>
+        <a href="#programs" class="mobile-link" data-filter-nav="bulgaria">🇧🇬 Bolgariya Work & Travel</a>
+        <a href="#faq" class="mobile-link" data-t="navFaq">Ko'p beriladigan savollar</a>
+        <a href="#contact" class="mobile-link" data-t="navContact">Biz bilan bog'lanish</a>
+      </nav>
+      <div class="drawer-contacts">
+        <p class="drawer-phone-label" data-t="fastCall">Tezkor bog'lanish:</p>
+        <a href="tel:+998881301020" class="drawer-phone-btn">+998 (88) 130-10-20</a>
+        <div class="drawer-socials">
+          <a href="https://t.me/EuroWay_uzb" target="_blank" rel="noopener" class="drawer-social-link tg">Telegram</a>
+          <a href="https://wa.me/998997643710" target="_blank" rel="noopener" class="drawer-social-link wa">WhatsApp</a>
+          <a href="https://instagram.com/euroway.uzb" target="_blank" rel="noopener" class="drawer-social-link ig">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Active Intake Badge with Micro-pulse -->
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span data-t="heroBadge">2026/2027 mavsumi arizalari qabuli ochiq</span>
+          </div>
+
+          <h1 class="hero-title" data-t="heroTitle">
+            Yevropa sari yo‘lingizni <span class="text-gradient">EUROWAY</span> bilan boshlang
+          </h1>
+
+          <p class="hero-desc" data-t="heroDesc">
+            Germaniya, Italiya va Bolgariyada qonuniy ishlash, nufuzli oliy ta’lim, 100% lik grantlar hamda xalqaro karyera imkoniyatlari.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#programs" class="btn btn-primary" data-t="btnPrograms">
+              <span>Dasturlarni ko'rish</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <button type="button" class="btn btn-glass open-apply-modal" data-program-preset="Konsultatsiya" data-t="btnApplyNow">
+              <span class="sparkle-icon">✨</span>
+              <span>Tezkor ariza berish</span>
+            </button>
+          </div>
+
+          <!-- Trust Badges List -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label" data-t="statCountries">Yevropa Davlati</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label" data-t="statLegal">Qonuniy & Shartnoma</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">7+</span>
+              <span class="stat-label" data-t="statPrograms">Maxsus Dastur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Animated Flight / Travel Card -->
+        <div class="hero-visual">
+          <div class="travel-card-glass">
+            <div class="flight-radar-header">
+              <div class="flight-badge">
+                <span class="flag-icon">🇺🇿</span> Toshkent 
+                <span class="flight-arrow">➔</span> 
+                <span class="flag-icon">🇩🇪</span> Germaniya
+              </div>
+              <span class="status-live">● 2026 QABUL FAOLLASHTIRILDI</span>
+            </div>
+
+            <!-- Route Map Graphic with Animated Jet Radar -->
+            <div class="route-display">
+              <div class="flight-path-svg">
+                <svg viewBox="0 0 360 135" fill="none" class="flight-radar-map" preserveAspectRatio="xMidYMid meet">
+                  <defs>
+                    <linearGradient id="flightRouteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#38bdf8"/>
+                      <stop offset="50%" stop-color="#818cf8"/>
+                      <stop offset="100%" stop-color="#fbbf24"/>
+                    </linearGradient>
+                    <linearGradient id="jetBodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#38bdf8"/>
+                      <stop offset="60%" stop-color="#ffffff"/>
+                      <stop offset="100%" stop-color="#93c5fd"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Radar range circles -->
+                  <circle cx="40" cy="95" r="18" stroke="rgba(56, 189, 248, 0.12)" stroke-width="1"/>
+                  <circle cx="40" cy="95" r="34" stroke="rgba(56, 189, 248, 0.06)" stroke-dasharray="2 4"/>
+                  <circle cx="320" cy="80" r="18" stroke="rgba(251, 191, 36, 0.12)" stroke-width="1"/>
+                  <circle cx="320" cy="80" r="36" stroke="rgba(251, 191, 36, 0.06)" stroke-dasharray="2 4"/>
+
+                  <!-- Pulse waves -->
+                  <circle cx="40" cy="95" r="8" fill="none" stroke="#38bdf8" stroke-width="1.5">
+                    <animate attributeName="r" values="8;26" dur="2.4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.9;0" dur="2.4s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="320" cy="80" r="8" fill="none" stroke="#fbbf24" stroke-width="1.5">
+                    <animate attributeName="r" values="8;30" dur="2.4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.9;0" dur="2.4s" repeatCount="indefinite"/>
+                  </circle>
+
+                  <!-- Corridor Base Track -->
+                  <path d="M 40 95 Q 180 15 320 80" stroke="rgba(255, 255, 255, 0.09)" stroke-width="2.5" stroke-linecap="round"/>
+
+                  <!-- Animated Dash Corridor -->
+                  <path class="flight-dash-flow" d="M 40 95 Q 180 15 320 80" stroke="url(#flightRouteGrad)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+
+                  <!-- City Nodes -->
+                  <circle cx="40" cy="95" r="5" fill="#38bdf8"/>
+                  <circle cx="320" cy="80" r="5" fill="#fbbf24"/>
+
+                  <!-- City Labels -->
+                  <text x="40" y="117" font-size="10.5" font-weight="700" fill="#38bdf8" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">Toshkent</text>
+                  <text x="320" y="103" font-size="10.5" font-weight="700" fill="#fbbf24" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">Germaniya</text>
+                  <text x="180" y="24" font-size="8.5" font-weight="600" fill="#64748b" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" letter-spacing="1">DE DIRECT AIRWAY</text>
+
+                  <!-- Realistic Airliner Jet along path -->
+                  <g class="animated-jet-node">
+                    <g transform="scale(0.85)">
+                      <!-- Airliner Fuselage (white with rounded aerodynamic nose) -->
+                      <path d="M 18,0 C 18,-2 14,-2.5 8,-2.5 L -12,-2 C -15,-2 -17,-1 -18,0 C -17,1 -15,2 -12,2 L 8,2.5 C 14,2.5 18,2 18,0 Z" fill="#ffffff" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.6))"/>
+                      
+                      <!-- Swept-back Wings -->
+                      <path d="M 5,-2.2 L -3,-18 L -7,-18 L -3,-2.2 Z" fill="#e2e8f0"/>
+                      <path d="M 5,2.2 L -3,18 L -7,18 L -3,2.2 Z" fill="#cbd5e1"/>
+                      
+                      <!-- Jet Engines under wings -->
+                      <rect x="-1" y="-9" width="5.5" height="2.2" rx="1.1" fill="#38bdf8"/>
+                      <rect x="-1" y="6.8" width="5.5" height="2.2" rx="1.1" fill="#38bdf8"/>
+                      
+                      <!-- Tail horizontal stabilizers -->
+                      <path d="M -13,-1.5 L -17,-8 L -19,-8 L -16,-1 Z" fill="#94a3b8"/>
+                      <path d="M -13,1.5 L -17,8 L -19,8 L -16,1 Z" fill="#94a3b8"/>
+                      
+                      <!-- Tail vertical fin (Blue) -->
+                      <path d="M -12,-0.8 L -17,-4.5 L -19,-4.5 L -16,0 Z" fill="#2563eb"/>
+                      
+                      <!-- Cockpit windshield -->
+                      <path d="M 13,-1.2 L 15.5,0 L 13,1.2 Z" fill="#0f172a"/>
+                    </g>
+                    <animateMotion path="M 40 95 Q 180 15 320 80" dur="4.2s" repeatCount="indefinite" rotate="auto"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Flight Specs Ticker -->
+            <div class="flight-specs-ticker">
+              <div class="spec-pill"><span class="spec-dot blue"></span> Parvoz: <strong>To‘g‘ridan-to‘g‘ri</strong></div>
+              <div class="spec-pill"><span class="spec-dot green"></span> Viza: <strong>100% Rasmiy</strong></div>
+              <div class="spec-pill"><span class="spec-dot gold"></span> Grant: <strong>8,000€ gacha</strong></div>
+            </div>
+
+            <!-- Destination Fast Chips -->
+            <div class="dest-chips">
+              <a href="#programs" class="dest-chip" data-filter-nav="germany">
+                <span class="flag">🇩🇪</span>
+                <div>
+                  <strong>Germaniya</strong>
+                  <small>Work & Travel, Ausbildung</small>
+                </div>
+                <span class="chip-arrow">➔</span>
+              </a>
+              <a href="#programs" class="dest-chip" data-filter-nav="italy">
+                <span class="flag">🇮🇹</span>
+                <div>
+                  <strong>Italiya</strong>
+                  <small>DSU Grant (~8,000€) & Universitet</small>
+                </div>
+                <span class="chip-arrow">➔</span>
+              </a>
+              <a href="#programs" class="dest-chip" data-filter-nav="bulgaria">
+                <span class="flag">🇧🇬</span>
+                <div>
+                  <strong>Bolgariya</strong>
+                  <small>Yozgi Work & Travel (Kurortlar)</small>
+                </div>
+                <span class="chip-arrow">➔</span>
+              </a>
+            </div>
+
+            <div class="card-footer-action">
+              <span>Barcha xizmatlar shartnoma asosida</span>
+              <a href="#contact" class="link-quick" data-t="linkConsult">Maslahat olish →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Agency Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-badge" data-t="badgeAbout">BIZ HAQIMIZDA</div>
+        <h2 class="section-title" data-t="aboutTitle">Yevropada ishonchli hamkoringiz</h2>
+        <p class="section-subtitle" data-t="aboutSubtitle">
+          <strong>EUROWAY Consulting Agency</strong> — yoshlar, talabalar va xalqaro tajriba orttirmoqchi bo‘lganlar uchun Yevropaning ilg‘or davlatlariga yo‘l ochib beruvchi professional konsalting agentligi.
+        </p>
+
+        <div class="advantages-grid">
+          <div class="adv-card">
+            <div class="adv-icon">⚖️</div>
+            <h3 data-t="adv1Title">Qonuniy va Rasmiy shartnoma</h3>
+            <p data-t="adv1Desc">Har bir mijoz bilan qonuniy shartnoma tuziladi. Xizmatlar shaffof va 100% xavfsiz amalga oshiriladi.</p>
+          </div>
+          <div class="adv-card">
+            <div class="adv-icon">🎯</div>
+            <h3 data-t="adv2Title">To‘liq Viza Ko‘magi</h3>
+            <p data-t="adv2Desc">Elchixona uchun hujjatlar paketini xatosiz tayyorlash, suhbatlarga individual tayyorgarlik va viza kafolati.</p>
+          </div>
+          <div class="adv-card">
+            <div class="adv-icon">💶</div>
+            <h3 data-t="adv3Title">Grantlar & Yuqori Daromad</h3>
+            <p data-t="adv3Desc">Italiyada 8,000€ gacha bo'lgan DSU grantlari hamda Germaniyada 1,800€-2,500€ oylik daromadli ish o'rinlari.</p>
+          </div>
+          <div class="adv-card">
+            <div class="adv-icon">🤝</div>
+            <h3 data-t="adv4Title">Doimiy Kuratorlik</h3>
+            <p data-t="adv4Desc">Yevropaga yetib borgandan so'ng turar joy topish, kutib olish va ro'yxatdan o'tishda doimiy yordam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section (Core) -->
+    <section class="section programs-section" id="programs">
+      <div class="container">
+        <div class="section-badge" data-t="badgePrograms">YO‘NALISHLAR</div>
+        <h2 class="section-title" data-t="programsTitle">Xalqaro Yevropa Dasturlari</h2>
+        <p class="section-subtitle" data-t="programsSubtitle">
+          O‘zingizga mos davlat va dasturni tanlang hamda talablari bilan batafsil tanishing.
+        </p>
+
+        <!-- Country Filter Tabs -->
+        <div class="filter-tabs" role="tablist">
+          <button type="button" class="filter-btn active" data-filter="all">
+            <span>🌍 Barchasi</span>
+            <span class="filter-count">7</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="germany" id="germany">
+            <span>🇩🇪 Germaniya</span>
+            <span class="filter-count">4</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="italy" id="italy">
+            <span>🇮🇹 Italiya</span>
+            <span class="filter-count">2</span>
+          </button>
+          <button type="button" class="filter-btn" data-filter="bulgaria" id="bulgaria">
+            <span>🇧🇬 Bolgariya</span>
+            <span class="filter-count">1</span>
+          </button>
+        </div>
+
+        <!-- Programs Card Grid -->
+        <div class="programs-grid" id="programsGrid">
+
+          <!-- 1. Germany - Work and Travel -->
+          <div class="program-card" data-country="germany" data-id="de-wt">
+            <div class="card-top">
+              <div class="country-pill">
+                <span class="pill-flag">🇩🇪</span> Germaniya
+              </div>
+              <span class="feature-tag hot">Talabalar uchun</span>
+            </div>
+            <h3 class="program-name">Work And Travel (Ferienjob)</h3>
+            <p class="program-brief">
+              O'zbekiston OTM talabalari uchun yozgi ta'tilda Germaniyada 2-3 oy davomida qonuniy ishlash va Yevropa bo‘ylab sayohat qilish.
+            </p>
+            <ul class="program-highlights">
+              <li><span>💶</span> Daromad: 1,800€ — 2,500€ / oy</li>
+              <li><span>⏱</span> Davomiyligi: 2-3 oy (yozgi ta'til)</li>
+              <li><span>📍</span> Shaharlar: Butun Germaniya bo'ylab</li>
+            </ul>
+            <div class="card-actions">
+              <button type="button" class="btn btn-sm btn-outline open-detail-btn" data-program-key="de-wt">Batafsil ma'lumot</button>
+              <button type="button" class="btn btn-sm btn-primary open-apply-modal" data-program-preset="Germaniya: Work And Travel">Ariza berish</button>
+            </div>
+          </div>
+
+          <!-- 2. Germany - Bachelor & Master -->
+          <div class="program-card" data-country="germany" data-id="de-bm">
+            <div class="card-top">
+              <div class="country-pill">
+                <span class="pill-flag">🇩🇪</span> Germaniya
+              </div>
+              <span class="feature-tag edu">Oliy Ta'lim</span>
+            </div>
+            <h3 class="program-name">Bakalavr va Magistratura</h3>
+            <p class="program-brief">
+              Germaniyaning top davlat universitetlarida mutlaqo bepul yoki arzon ta'lim. Nemis yoki ingliz tilidagi xalqaro diplom.
+            </p>
+            <ul class="program-highlights">
+              <li><span>🎓</span> Davlat OTMlarida bepul kontrakt</li>
+              <li><span>💼</span> Talabalar uchun haftasiga 20 soat ishlash huquqi</li>
+              <li><span>🌍</span> 27 ta Shengen davlatiga erkin vizasiz chiqish</li>
+            </ul>
+            <div class="card-actions">
+              <button type="button" class="btn btn-sm btn-outline open-detail-btn" data-program-key="de-bm">Batafsil ma'lumot</button>
+              <button type="button" class="btn btn-sm btn-primary open-apply-modal" data-program-preset="Germaniya: Bakalavr va Magistr">Ariza berish</button>
+            </div>
+          </div>
+
+          <!-- 3. Germany - Ausbildung -->
+          <div class="program-card" data-country="germany" data-id="de-aus">
+            <div class="card-top">
+              <div class="country-pill">
+                <span class="pill-flag">🇩🇪</span> Germaniya
+              </div>
+              <span class="feature-tag work">Oylik maoshli</span>
+            </div>
+            <h3 class="program-name">Ausbildung (Dual Ta'lim)</h3>
+            <p class="program-brief">
+              Germaniyada o‘qish va ishlashni birlashtiruvchi professional kasb-hunar dasturi. O'qish davrida oylik stipendiya to'lanadi.
+            </p>
+            <ul class="program-highlights">
+              <li><span>💰</span> Oylik stipendiya: 950€ — 1,300€</li>
+              <li><span>📚</span> 30% nazariya + 70% amaliyot korxonada</li>
+              <li><span>🏆</span> Tugatgach Germaniyada rasmiy ish kafolati</li>
+            </ul>
+            <div class="card-actions">
+              <button type="button" class="btn btn-sm btn-outline open-detail-btn" data-program-key="de-aus">Batafsil ma'lumot</button>
+              <button type="button" class="btn btn-sm btn-primary open-apply-modal" data-program-preset="Germaniya: Ausbildung">Ariza berish</button>
+            </div>
+          </div>
+
+          <!-- 4. Germany - FSJ Dasturi -->
+          <div class="program-card" data-country="germany" data-id="de-fsj">
+            <div class="card-top">
+              <div class="country-pill">
+                <span class="pill-flag">🇩🇪</span> Germaniya
+              </div>
+              <span class="feature-tag grant">Ijtimoiy dastur</span>
+            </div>
+            <h3 class="program-name">FSJ Dasturi (Ko‘ngillilik Yili)</h3>
+            <p class="program-brief">
+              Freiwilliges Soziales Jahr — 1 yillik ijtimoiy amaliyot. Tilni B2/C1 darajaga chiqarish, yashash joyi, ovqatlanish va cho'ntak puli beriladi.
+            </p>
+            <ul class="program-highlights">
+              <li><span>🏠</span> Bepul turar joy va oylik cho'ntak puli (~450€-550€)</li>
+              <li><span>🗣</span> Nemis tilini Germaniya muhitida mukammal o'rganish</li>
+              <li><span>🚀</span> Keyinchalik Universitet yoki Ausbildung uchun katta imtiyoz</li>
+            </ul>
+            <div class="card-actions">
+              <button type="button" class="btn btn-sm btn-outline open-detail-btn" data-program-key="de-fsj">Batafsil ma'lumot</button>
+              <button type="button" class="btn btn-sm btn-primary open-apply-modal" data-program-preset="Germaniya: FSJ dasturi">Ariza berish</button>
+            </div>
+          </div>
+
+          <!-- 5. Bulgaria - Work and Travel -->
+          <div class="program-card" data-country="bulgaria" data-id="bg-wt">
+            <div class="card-top">
+              <div class="country-pill">
+                <span class="pill-flag">🇧🇬</span> Bolgariya
+              </div>
+              <span class="feature-tag hot">Mavsumiy ish</span>
+            </div>
+            <h3 class="program-name">Bulgaria Work and Travel</h3>
+            <p class="program-brief">
+              Qora dengiz sohillaridagi mehmonxona, restoran va dam olish maskanlarida yozgi mavsumiy rasmiy ish o‘rinlari.
+            </p>
+            <ul class="program-highlights">
+              <li><span>🏨</span> Bepul turar joy va 3 mahal ovqat ish beruvchi hisobidan</li>
+              <li><span>⚡</span> Tez va oson viza chiqish tartibi</li>
+              <li><span>🏖</span> Dam olish, dengiz bo'yida xalqaro jamoada ishlash</li>
+            </ul>
+            <div class="card-actions">
+              <button type="button" class="btn btn-sm btn-outline open-detail-btn" data-program-key="bg-wt">Batafsil ma'lumot</button>
+              <button type="button" class="btn btn-sm btn-primary open-apply-modal" data-program-preset="Bolgariya: Work and Travel">Ariza berish</button>
+            </div>
+          </div>
+
+          <!-- 6. Italy - Bachelor -->
+          <div class="program-card" data-country="italy" data-id="it-bac">
+            <div class="card-top">
+              <div class="country-pill">
+                <span class="pill-flag">🇮🇹</span> Italiya
+              </div>
+              <span class="feature-tag edu">Bakalavr</span>
+            </div>
+            <h3 class="program-name">Italiya: Bakalavriat Ta'limi</h3>
+            <p class="program-brief">
+              Italiyaning nufuzli davlat universitetlarida ingliz yoki italyan tilida 3 yillik Yevropa standartidagi bakalavr dasturlari.
+            </p>
+            <ul class="program-highlights">
+              <li><span>🏛</span> Rim, Milan, Bolonya, Turin kabi top shaharlar</li>
+              <li><span>🌐</span> IELTS 5.5+ yoki ingliz tilida o'qish imkoniyati</li>
+              <li><span>💰</span> DSU grantiga hujjat topshirish imkoni</li>
+            </ul>
+            <div class="card-actions">
+              <button type="button" class="btn btn-sm btn-outline open-detail-btn" data-program-key="it-bac">Batafsil ma'lumot</button>
+              <button type="button" class="btn btn-sm btn-primary open-apply-modal" data-program-preset="Italiya: Bakalavr">Ariza berish</button>
+            </div>
+          </div>
+
+          <!-- 7. Italy - Master & DSU Grant -->
+          <div class="program-card" data-country="italy" data-id="it-mas">
+            <div class="card-top">
+              <div class="country-pill">
+                <span class="pill-flag">🇮🇹</span> Italiya
+              </div>
+              <span class="feature-tag grant">Yillik ~8,000€ Grant</span>
+            </div>
+            <h3 class="program-name">Italiya: Magistratura & Grantlar</h3>
+            <p class="program-brief">
+              Ingliz tilidagi 2 yillik magistratura dasturlari hamda davlat tomonidan to‘liq moliyalashtiriluvchi DSU regional grantlari.
+            </p>
+            <ul class="program-highlights">
+              <li><span>💵</span> Yillik 7,000€ — 8,000€ gacha naqd stipendiya</li>
+              <li><span>🏢</span> Bepul turar joy (yotoqxona) va bepul kontrakt</li>
+              <li><span>🎓</span> Diplom butun dunyoda 100% tan olinadi</li>
+            </ul>
+            <div class="card-actions">
+              <button type="button" class="btn btn-sm btn-outline open-detail-btn" data-program-key="it-mas">Batafsil ma'lumot</button>
+              <button type="button" class="btn btn-sm btn-primary open-apply-modal" data-program-preset="Italiya: Magistr & DSU Grant">Ariza berish</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Consultation Form Banner -->
+    <section class="section fast-apply-section">
+      <div class="container">
+        <div class="apply-banner">
+          <div class="banner-content">
+            <span class="banner-tag" data-t="bannerTag">BEPUL KONSULTATSIYA</span>
+            <h2 class="banner-title" data-t="bannerTitle">Qaysi dastur sizga mos kelishini bilmayapsizmi?</h2>
+            <p class="banner-text" data-t="bannerText">
+              Ma'lumotlaringizni qoldiring, mutaxassislarimiz 15 daqiqa ichida siz bilan bog'lanib, sharoitingizga eng mos yo'nalishni tanlab berishadi.
+            </p>
+          </div>
+          <div class="banner-action">
+            <button type="button" class="btn btn-primary btn-lg open-apply-modal" data-program-preset="Umumiy bepul konsultatsiya" data-t="btnFastConsult">
+              <span>Konsultatsiya olish</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-badge" data-t="badgeFaq">SAVOL-JAVOBLAR</div>
+        <h2 class="section-title" data-t="faqTitle">Ko‘p Beriladigan Savollar</h2>
+        <p class="section-subtitle" data-t="faqSubtitle">
+          Mijozlarimiz tomonidan tez-tez so‘raladigan asosiy savollarga javoblar.
+        </p>
+
+        <div class="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Work and Travel (Germaniya) ga kimlar borishi mumkin?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Germaniya Ferienjob dasturiga O'zbekiston yoki xorijdagi davlat va xususiy OTMlarning kunduzgi bo‘limida tahsil olayotgan (1-, 2- va 3-kurs) talabalari qatnasha oladi. Asosiy talab — faol talaba bo'lish va boshlang'ich nemis yoki ingliz tili.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Italiyadagi DSU granti nimalarni o‘z ichiga oladi?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>DSU (Diritto allo Studio Universitario) — Italiya hukumati tomonidan beriladigan ehtiyojmandlik va rag'batlantirish granti. U universitetning 100% kontrakt to'lovini qoplaydi, bepul talabalar turar joyi va talabaga har yili 7,000€ dan 8,000€ gacha naqd stipendiya taqdim etadi.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Ausbildung dasturiga topshirish uchun nemis tili qay darajada kerak?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Ausbildung dual kasb-hunar ta'limi bo'lgani sababli, kamida Gyote (Goethe), ÖSD yoki Telc xalqaro B1 yoki B2 sertifikati talab qilinadi. Biz shartnoma topish va elchixonaga to'liq tayyorlashni o'z zimmamizga olamiz.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Hujjatlar tayyorlash va viza olish jarayoni qancha vaqt oladi?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Tanlangan dasturga bog'liq: Bolgariya Work and Travel uchun 3-5 hafta, Germaniya Work and Travel uchun 1-2 oy, Universitet va Ausbildung vizalari uchun esa odatda 2 oydan 4 oygacha vaqt talab qilinadi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Socials Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-badge" data-t="badgeContact">BOG‘LANISH</div>
+        <h2 class="section-title" data-t="contactTitle">Biz Bilan Bog‘laning</h2>
+        <p class="section-subtitle" data-t="contactSubtitle">
+          Savollaringiz bormi? Mutaxassislarimiz har doim aloqada va sizga yordam berishga tayyor.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Channels -->
+          <div class="contact-channels">
+            <!-- Phone -->
+            <a href="tel:+998881301020" class="contact-channel-card">
+              <div class="channel-icon phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="channel-info">
+                <small data-t="lblPhone">Telefon raqam</small>
+                <strong>88-130-10-20</strong>
+                <span>+998 (88) 130-10-20</span>
+              </div>
+              <div class="channel-action">Qo'ng'iroq qilish ↗</div>
+            </a>
+
+            <!-- Telegram -->
+            <a href="https://t.me/EuroWay_uzb" target="_blank" rel="noopener noreferrer" class="contact-channel-card tg-card">
+              <div class="channel-icon tg">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+              </div>
+              <div class="channel-info">
+                <small>Telegram</small>
+                <strong>@EuroWay_uzb</strong>
+                <span>Rasmiy kanal va aloqa</span>
+              </div>
+              <div class="channel-action">Yozish ↗</div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/998997643710" target="_blank" rel="noopener noreferrer" class="contact-channel-card wa-card">
+              <div class="channel-icon wa">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+              </div>
+              <div class="channel-info">
+                <small>WhatsApp</small>
+                <strong>99-764-37-10</strong>
+                <span>+998 (99) 764-37-10</span>
+              </div>
+              <div class="channel-action">Xabar yuborish ↗</div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/euroway.uzb" target="_blank" rel="noopener noreferrer" class="contact-channel-card ig-card">
+              <div class="channel-icon ig">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <div class="channel-info">
+                <small>Instagram</small>
+                <strong>@euroway.uzb</strong>
+                <span>Yangiliklar va natijalar</span>
+              </div>
+              <div class="channel-action">Kuzatish ↗</div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:ergashkholmirzaev@gmail.com" class="contact-channel-card email-card">
+              <div class="channel-icon email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="channel-info">
+                <small>Elektron pochta</small>
+                <strong>ergashkholmirzaev@gmail.com</strong>
+                <span>Rasmiy yozishmalar uchun</span>
+              </div>
+              <div class="channel-action">Yozish ↗</div>
+            </a>
+          </div>
+
+          <!-- Right: Interactive Quick Application Form (Converts to Direct Telegram / WhatsApp message) -->
+          <div class="contact-form-card">
+            <h3 class="form-title" data-t="formTitle">Tezkor Ariza Qoldirish</h3>
+            <p class="form-desc" data-t="formDesc">
+              Formani to‘ldiring, ma'lumotlaringiz to‘g‘ridan-to‘g‘ri mutaxassisimizga yetib boradi.
+            </p>
+
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="userName" data-t="lblName">Ismingiz va Familiyangiz *</label>
+                <input type="text" id="userName" name="name" placeholder="Masalan: Sardor Aliyev" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="userPhone" data-t="lblUserPhone">Telefon raqamingiz *</label>
+                <input type="tel" id="userPhone" name="phone" placeholder="+998 (90) 123-45-67" required autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="userProgram" data-t="lblSelectProgram">Qiziqqan yo‘nalishingiz *</label>
+                <select id="userProgram" name="program" required>
+                  <option value="" disabled selected>Dasturni tanlang...</option>
+                  <optgroup label="🇩🇪 Germaniya">
+                    <option value="Germaniya: Work And Travel">Germaniya: Work And Travel (Ferienjob)</option>
+                    <option value="Germaniya: Bakalavr va Magistr">Germaniya: Bakalavr va Magistratura</option>
+                    <option value="Germaniya: Ausbildung">Germaniya: Ausbildung (Dual ta'lim)</option>
+                    <option value="Germaniya: FSJ dasturi">Germaniya: FSJ dasturi (Ko'ngillilik)</option>
+                  </optgroup>
+                  <optgroup label="🇮🇹 Italiya">
+                    <option value="Italiya: Bakalavr">Italiya: Bakalavriat</option>
+                    <option value="Italiya: Magistr & DSU Grant">Italiya: Magistratura va DSU Grant</option>
+                  </optgroup>
+                  <optgroup label="🇧🇬 Bolgariya">
+                    <option value="Bolgariya: Work and Travel">Bolgariya: Work and Travel</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" data-t="lblMessage">Qo‘shimcha savolingiz (ixtiyoriy)</label>
+                <textarea id="userMessage" name="message" rows="3" placeholder="Til darajangiz yoki savolingiz haqida..."></textarea>
+              </div>
+
+              <div class="form-submit-buttons">
+                <button type="submit" class="btn btn-primary btn-block btn-compact" id="submitTgBtn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+                  <span>Telegram orqali yuborish</span>
+                </button>
+                <button type="button" class="btn btn-glass btn-block btn-compact" id="submitWaBtn">
+                  <svg class="btn-icon wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+                  <span>WhatsApp orqali yuborish</span>
+                </button>
+              </div>
+
+              <p class="form-privacy" data-t="formPrivacy">
+                🔒 Shaxsiy ma'lumotlaringiz maxfiyligi 100% kafolatlanadi.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="EUROWAY Logo" class="footer-logo">
+        <p class="footer-tagline">
+          EUROWAY Consulting Agency — Yevropaga ishonchli va kafolatlangan ko‘prik.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Davlatlar</h4>
+          <a href="#programs" data-filter-nav="germany">Germaniya Dasturlari</a>
+          <a href="#programs" data-filter-nav="italy">Italiya Universitetlari</a>
+          <a href="#programs" data-filter-nav="bulgaria">Bolgariya Work&Travel</a>
+        </div>
+        <div class="footer-col">
+          <h4>Aloqa</h4>
+          <a href="tel:+998881301020">Tel: 88-130-10-20</a>
+          <a href="https://wa.me/998997643710">WhatsApp: 99-764-37-10</a>
+          <a href="https://t.me/EuroWay_uzb">Telegram: @EuroWay_uzb</a>
+          <a href="https://instagram.com/euroway.uzb">Instagram: @euroway.uzb</a>
+          <a href="mailto:ergashkholmirzaev@gmail.com">ergashkholmirzaev@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 EUROWAY Consulting Agency. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE FIXED BOTTOM ACTION BAR (Touch-optimized mobile-first UX) -->
+  <aside class="mobile-bottom-bar" aria-label="Tezkor aloqa paneli">
+    <a href="tel:+998881301020" class="mob-btn call-action" aria-label="Qo'ng'iroq qilish">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Qo‘ng‘iroq</span>
+    </a>
+    <a href="https://t.me/EuroWay_uzb" target="_blank" rel="noopener" class="mob-btn tg-action" aria-label="Telegram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+      <span>Telegram</span>
+    </a>
+    <a href="https://wa.me/998997643710" target="_blank" rel="noopener" class="mob-btn wa-action" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <button type="button" class="mob-btn apply-action open-apply-modal" data-program-preset="Mobil tezkor ariza" aria-label="Ariza berish">
+      <span class="btn-bubble">✨</span>
+      <span>Ariza berish</span>
+    </button>
+  </aside>
+
+  <!-- PROGRAM DETAILS MODAL (iOS Sheet style on Mobile) -->
+  <div class="modal-backdrop" id="detailModal" aria-hidden="true" role="dialog" aria-labelledby="modalDetailTitle">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <span class="modal-flag" id="modalDetailFlag">🇩🇪</span>
+          <h3 id="modalDetailTitle">Dastur nomi</h3>
+        </div>
+        <button class="modal-close" id="closeDetailModal" aria-label="Yopish">✕</button>
+      </div>
+      <div class="modal-body" id="modalDetailBody">
+        <!-- Dynamic Content injected via JS -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" id="modalDetailCloseBtn">Yopish</button>
+        <button type="button" class="btn btn-primary" id="modalDetailApplyBtn">Ushbu dasturga ariza topshirish</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPLICATION FORM MODAL -->
+  <div class="modal-backdrop" id="applyModal" aria-hidden="true" role="dialog" aria-labelledby="modalApplyTitle">
+    <div class="modal-sheet modal-form-sheet">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <span class="modal-icon">📝</span>
+          <h3 id="modalApplyTitle">Ariza Qoldirish</h3>
+        </div>
+        <button class="modal-close" id="closeApplyModal" aria-label="Yopish">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">Tanlangan dastur: <strong id="modalSelectedProgram" class="highlight-program">Konsultatsiya</strong></p>
+        <form id="modalApplyForm" class="modal-form">
+          <input type="hidden" id="modalHiddenProgram" value="Konsultatsiya">
+          <div class="form-group">
+            <label for="modalUserName">Ismingiz va Familiyangiz *</label>
+            <input type="text" id="modalUserName" required placeholder="Masalan: Dilshod Rustamov">
+          </div>
+          <div class="form-group">
+            <label for="modalUserPhone">Telefon raqamingiz *</label>
+            <input type="tel" id="modalUserPhone" required placeholder="+998 (90) 123-45-67">
+          </div>
+          <div class="form-group">
+            <label for="modalUserNote">Savolingiz yoki izohingiz</label>
+            <textarea id="modalUserNote" rows="2" placeholder="Masalan: Nemis tili A2 darajadamam..."></textarea>
+          </div>
+          <div class="modal-submit-actions">
+            <button type="submit" class="btn btn-primary btn-block btn-compact" id="modalSubmitTg">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+              <span>Telegram orqali yuborish</span>
+            </button>
+            <button type="button" class="btn btn-glass btn-block btn-compact" id="modalSubmitWa">
+              <svg class="btn-icon wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+              <span>WhatsApp orqali yuborish</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
